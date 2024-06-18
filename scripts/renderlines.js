@@ -4,9 +4,9 @@ export function renderConnectingLine(nodes,node,ctx){
         if(distance>150) return;
         let opacity = (150-distance)/150;
         ctx.strokeStyle = `rgba(255, 192, 203,${opacity})`;
-        ctx.beginPath();          // Start a new path
-        ctx.moveTo(node.positionX, node.positionY);       // Move the pen to (20, 20)
-        ctx.lineTo(n.positionX, n.positionY);     // Draw a line to (200, 100)
+        ctx.beginPath();
+        ctx.moveTo(node.positionX, node.positionY);
+        ctx.lineTo(n.positionX, n.positionY);
         ctx.stroke();
     });
 }

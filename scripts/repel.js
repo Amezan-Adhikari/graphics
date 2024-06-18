@@ -15,7 +15,6 @@ export function repel(nodes){
 
             node.positionX = state.X + radius*Math.cos(angle);
             node.positionY = state.Y + radius* Math.sin(angle);
-            console.log(node);
         }
       });
 }

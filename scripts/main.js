@@ -44,7 +44,28 @@ let nodes=[
     new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
     new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
     new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
-
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
 ];
 
 
@@ -52,7 +73,7 @@ let nodes=[
 
 window.addEventListener("mousedown",(e)=>{
     let node = new Node(e.clientX,e.clientY,5,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white");
-    console.log(node);
+
     nodes = [...nodes,node];
 })
 
@@ -60,6 +81,13 @@ window.addEventListener("mousemove",(e)=>{
     mouseMove(e,nodes);
 })
 
+window.addEventListener("touchmove",(e)=>{
+    let pos  = {
+        clientX:e.touches[0].clientX,
+        clientY:e.touches[0].clientY
+    }
+    mouseMove(pos,nodes);
+})
 
 
 
