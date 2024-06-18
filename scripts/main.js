@@ -11,13 +11,47 @@ canvas.width = window.innerWidth;
 
 
 //nodes array
-let nodes=[];
+let nodes=[
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+    new Node(Math.floor(Math.random()*window.innerWidth),Math.floor(Math.random()*window.innerHeight),Math.floor(Math.random()*4)+4,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white"),
+
+];
 
 
 //events
 
 window.addEventListener("mousedown",(e)=>{
-    let node = new Node(e.clientX,e.clientY,5,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"pink");
+    let node = new Node(e.clientX,e.clientY,5,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"white");
     console.log(node);
     nodes = [...nodes,node];
 })
