@@ -2,6 +2,7 @@ import { Node } from "./node.js";
 import { render } from "./nodeRender.js";
 import { renderConnectingLine } from "./renderlines.js";
 import { mouseMove } from "./mouse.js";
+import { repel } from "./repel.js";
 const canvas = document.getElementsByTagName("canvas")[0];
 const ctx = canvas.getContext("2d");
 //height and width of canvas
@@ -16,7 +17,9 @@ let nodes=[];
 //events
 
 window.addEventListener("mousedown",(e)=>{
-    nodes = [...nodes,new Node(e.clientX,e.clientY,5,0,0,"pink")];
+    let node = new Node(e.clientX,e.clientY,5,parseFloat(Math.random().toFixed(2))-0.5,parseFloat(Math.random().toFixed(2))-0.5,"pink");
+    console.log(node);
+    nodes = [...nodes,node];
 })
 
 window.addEventListener("mousemove",(e)=>{
@@ -39,12 +42,12 @@ window.addEventListener("mousemove",(e)=>{
 
         if (deltaTime <= frameTime) {
             ctx.clearRect(0,0,window.innerWidth,window.innerHeight)
-
             nodes.forEach(node => {
-                node.update();
+                node.update(canvas);
                 renderConnectingLine(nodes,node,ctx);
                 render(node,ctx);
             });
+            repel(nodes);
         }
 
         requestAnimationFrame(animation);

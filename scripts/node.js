@@ -15,8 +15,28 @@ export class Node{
         this.color = color;
     }
 
-    update(){
-        this.positionX += this.velocityX;
-        this.positionY += this.velocityY;
+    update(canvas){
+        this.positionX = this.positionX + this.velocityX;
+        this.positionY = this.positionY + this.velocityY;
+
+        if((this.positionX + this.radius) > canvas.width ){
+            this.velocityX = -this.velocityX;
+            this.positionX = canvas.width-this.radius;
+        }
+        if((this.positionX - this.radius) < 0){
+            this.velocityX = -this.velocityX;
+            this.positionX = this.radius;
+        }
+
+        if((this.positionY + this.radius) > canvas.height ){
+            this.velocityY= -this.velocityY;
+            this.positionY = canvas.height-this.radius;
+        }
+        if((this.positionY - this.radius) < 0){
+            this.velocityY = -this.velocityY;
+            this.positionY = this.radius;
+        }
+
+
     }
 }
