@@ -14,4 +14,9 @@ export class Node{
         this.velocityY = dy;
         this.color = color;
     }
+
+    update(){
+        this.positionX += this.velocityX;
+        this.positionY += this.velocityY;
+    }
 }

@@ -1,7 +1,7 @@
 import { Node } from "./node.js";
 import { render } from "./nodeRender.js";
-
-
+import { renderConnectingLine } from "./renderlines.js";
+import { mouseMove } from "./mouse.js";
 const canvas = document.getElementsByTagName("canvas")[0];
 const ctx = canvas.getContext("2d");
 //height and width of canvas
@@ -16,7 +16,11 @@ let nodes=[];
 //events
 
 window.addEventListener("mousedown",(e)=>{
-    nodes = [...nodes,new Node(e.clientX,e.clientY,10,0,0,"pink")];
+    nodes = [...nodes,new Node(e.clientX,e.clientY,5,0,0,"pink")];
+})
+
+window.addEventListener("mousemove",(e)=>{
+    mouseMove(e,nodes);
 })
 
 
@@ -37,8 +41,9 @@ window.addEventListener("mousedown",(e)=>{
             ctx.clearRect(0,0,window.innerWidth,window.innerHeight)
 
             nodes.forEach(node => {
-                render(node,ctx);
+                node.update();
                 renderConnectingLine(nodes,node,ctx);
+                render(node,ctx);
             });
         }
 
